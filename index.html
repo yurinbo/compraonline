@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Adlam+Unjoined:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/mundo.png">
+            </div>
+            <nav class="nav-menu">
+                <a href="#"></a>
+                <a href="#sobre2">Sobre</a>
+                <a id="button" href="#cadastro">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="mensag" id="mensagem">
+        <div class="aviso">
+            <p>CADASTRO REALIZADO COM SUCESSO!</p>
+            <img src="img/correto.png" alt=""/>
+        </div>
+    </section>
+
+    <section id="sobre2" class="sobre">
+        <div class="sobre-posi">
+            <div class="textos">
+                <h1>Bem-vindo à nossa <mark>Loja Online!</mark></h1>
+                <p>Aqui na nossa loja online, queremos tornar sua experiência de compra o mais simples e agradável possível. Oferecemos uma grande variedade de produtos e promoções para você aproveitar.
+                    Ao se cadastrar, você pode aproveitar vantagens como um processo de compra mais rápido, acesso a ofertas exclusivas e um histórico de pedidos personalizado. Além disso, você será o primeiro a saber das novidades e lançamentos.
+                    Não perca tempo! Faça seu cadastro e comece a explorar tudo o que nossa loja tem a oferecer.</p>
+            </div>
+            <div class="humano">
+                <img src="img/humano.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="cadastro" class="interface">
+        <div class="formulario">
+            <div class="conteudo">
+                <div id="imgs">
+                    <img src="img/enviar.png" alt=""/>
+                </div>
+                <div class="text">
+                    <p>CADASTRE-SE</p>
+                </div>
+            </div>
+            <div class="form">
+                <form class="estilo-form" method="post" action="/receber_dados.php">
+                    <div class="input1">
+                        <p>Nome</p>
+                        <input type="text" name="nome" placeholder="Digite seu Nome aqui"required maxlength="40">
+                    </div>
+                    <div class="input1">
+                        <p>E-Mail</p>
+                        <input type="email" name="email" placeholder="Digite seu e-mail"required>
+                    </div>
+                    <div class="input1">
+                        <p>CPF</p>
+                        <input id="cpff" type="text" autocomplete="off" name="cpf" placeholder="Digite seu CPF" maxlength="14"
+                        oninput="this.value = this.value.replace(/[^0-9.-]/g, '')">
+                    </div>
+                    <div class="input1">
+                        <p>Sexo</p>
+                        <select id="EstadoCivil" name="EstadoCivil">
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option >
+                        </select>
+                    </div>
+                    <div class="input2">
+                        <p>Escolha seu tipo de conta</p>
+                        <div class="radios">
+                            <div class="inp">
+                                Vendedor:
+                                <input type="radio" name="Conta" value="v"required>
+                            </div>
+                            <div class="inp">
+                                Cliente:
+                                <input id="inp" type="radio" name="Conta" value="v"required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input1">
+                        <p>Senha</p>
+                        <input type="password" id="Senha" name="Senha" placeholder="Digite sua senha" maxlength="10" required>
+                    </div>
+                    <div>
+                        <input type="submit" name="enviar" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

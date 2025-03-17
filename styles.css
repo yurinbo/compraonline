@@ -1,0 +1,402 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Adlam Unjoined", sans-serif;
+}
+
+/*header*/
+.header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.212);
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.header-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu > a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 10px;
+}
+
+#button {
+    color: white;
+    border-radius: 20px;
+    height: 20px;
+    background-color: rgb(0, 133, 156);
+}
+
+@media (max-width: 1000px) {
+    .header-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+/*sobre*/
+.sobre{
+    margin: 0px 200px 0px 200px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sobre-posi{
+    gap: 100px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textos p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.textos h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.humano img{
+    height: 400px;
+    width: 400px;
+    
+}
+
+@media (max-width: 1400px) {
+    .sobre{
+        margin: 0px 100px 0px 100px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .sobre{
+        margin: 0px 50px 0px 50px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .humano{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .textos p{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+/*mensagem*/
+#mensagem{
+    display: none;
+}
+.mensag{
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    display: flex;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.212);
+    overflow: hidden;
+    border-radius: 5px;
+    height: 60px;
+    width: 350px;
+    background-color: white;
+    color: rgb(14, 63, 22);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    gap: 10px;
+}
+.aviso img {
+    height: 40px;
+}
+
+
+
+
+
+
+
+/*section*/
+.interface{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(0, 133, 156) 30%);
+}
+/*div form*/
+.formulario{
+    box-shadow: 5px 10px 30px 10px rgba(0, 0, 0, 0.212);
+    overflow: hidden;
+    border-radius: 5px;
+    height: 830px;
+    width: 450px;
+    background: linear-gradient(to bottom, rgba(14, 63, 63, 0.685) 0%, white 30%);
+}
+
+/*conteudo do form*/
+.conteudo{
+    color: rgb(14, 63, 22);
+    text-align: center;
+    
+}
+
+.conteudo .text p{
+    font-size: 23px;
+    font-weight: 700;
+    
+}
+    
+#imgs{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    
+}
+
+/*form estilo*/
+.estilo-form{
+    align-items: center;
+    margin: 0px 25px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+form input{
+    font-size: 17px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 133, 156);
+    height: 40px;
+    width: 350px;
+}
+
+input[type="submit"]{
+    transition: .2s;
+    font-size: 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 0px;
+    border: none;
+    color: white;
+    background-color: rgb(255, 150, 150);
+}
+
+input[type="submit"]:hover {
+    border-radius: 5px;
+    background-color: rgb(167, 100, 100);
+}
+
+.input1 p{
+    margin: 0;
+    color: rgb(14, 63, 22);
+}
+
+#EstadoCivil{
+    font-size: 17px;
+    border-radius: 3px;
+    border: 1px solid rgb(0, 133, 156);
+    height: 40px;
+    width: 359px;
+}
+
+.radios{
+    height: 80px;
+    color: rgb(14, 63, 22);
+    border: 1px solid rgb(0, 133, 156);
+    border-radius: 3px;
+    margin: 0px 20px 0px 20px;
+}
+
+.input2 p{
+    margin: 0px 0px 0px 20px;
+    color: rgb(14, 63, 22);
+}
+
+.input2{
+    width: 400px;
+}
+
+.inp{
+    margin: 10px;
+}
+
+input[type="radio"]{
+    transform: scale(2.5);
+    height: 10px;
+    width: 20px;
+}
+
+
+
+@media (max-width: 800px) {
+    .formulario{
+        height: 800px;
+        width: 350px;
+    }
+    .conteudo .text p{
+        font-size: 20px;
+        
+    }
+        
+    #imgs{
+        margin: 10px auto;
+        width: 90px;
+        height: 90px;
+    }
+
+    #imgs img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .estilo-form{
+        margin: 0px 25px;
+        gap: 20px;
+    }
+    form input{
+        font-size: 17px;
+        height: 40px;
+        width: 280px;
+    }
+    
+    input[type="submit"]{
+    
+        font-size: 13px;
+        width: 80px;
+        height: 40px;
+    }
+
+    .aviso{
+        margin-top: 50px;
+    }
+    
+    #EstadoCivil{
+        width: 290px;
+    }
+    
+    
+    .input2{
+        width: 330px;
+    }
+    
+    input[type="radio"]{
+        transform: scale(2.5);
+        height: 10px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .formulario{
+        height: 650px;
+        width: 250px;
+    }
+    .conteudo .text p{
+        font-size: 18px;
+        
+    }
+        
+    #imgs{
+        margin: 10px auto;
+        width: 80px;
+        height: 80px;
+    }
+
+    #imgs img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .estilo-form{
+        margin: 0px 25px;
+        gap: 10px;
+    }
+    form input{
+        font-size: 15px;
+        height: 30px;
+        width: 200px;
+    }
+    
+    input[type="submit"]{
+        font-size: 13px;
+        width: 70px;
+        height: 30px;
+    }
+
+    .aviso{
+        margin-top: 50px;
+        height: 40px;
+        width: 250px;
+        font-size: 10px;
+        font-weight: 800;
+    }
+    .aviso img {
+        height: 30px;
+    }
+    
+    #EstadoCivil{
+        width: 205px;
+    }
+    
+    .input2{
+        width: 250px;
+    }
+
+    input[type="radio"]{
+        transform: scale(2.5);
+        height: 10px;
+        width: 20px;
+    }
+}
