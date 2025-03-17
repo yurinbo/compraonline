@@ -168,7 +168,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    height: 1100px;
     background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(0, 133, 156) 30%);
 }
 /*div form*/
@@ -252,14 +252,14 @@ input[type="submit"]:hover {
 }
 
 .radios{
-    height: 80px;
+    height: 70px;
     color: rgb(14, 63, 22);
     border: 1px solid rgb(0, 133, 156);
     border-radius: 3px;
     margin: 0px 20px 0px 20px;
 }
 
-.input2 p{
+.input2 .pp{
     margin: 0px 0px 0px 20px;
     color: rgb(14, 63, 22);
 }
@@ -268,17 +268,26 @@ input[type="submit"]:hover {
     width: 400px;
 }
 
+.paragrafo{
+    margin: 0px;
+}
+
 .inp{
-    margin: 10px;
+    height: 30px;
+    align-items: center;
+    display: flex;
 }
 
 input[type="radio"]{
+    margin: 0px;
     transform: scale(2.5);
     height: 10px;
-    width: 20px;
+    width: 10px;
 }
 
-
+.marg{
+    padding-left: 10px;
+}
 
 @media (max-width: 800px) {
     .formulario{
@@ -332,10 +341,12 @@ input[type="radio"]{
     }
     
     input[type="radio"]{
+        margin: 0px;
         transform: scale(2.5);
         height: 10px;
-        width: 20px;
+        width: 10px;
     }
+
 }
 
 @media (max-width: 400px) {
@@ -397,6 +408,6 @@ input[type="radio"]{
     input[type="radio"]{
         transform: scale(2.5);
         height: 10px;
-        width: 20px;
+        width: 10px;
     }
 }
